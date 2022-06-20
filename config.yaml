@@ -1,0 +1,59 @@
+exp_name: exp_name
+dataset_path: D:/project_2/data_p2/ #dataset_path:   
+
+experiments: Experiments_as/
+model_name: unet3d # options: unet3d, small
+
+weights_test_file: D:/project_2/scripts/p2_segmentation/Experiments_as/box_gen_loss_fold_1/best_model.ckpt
+weights_test_file_multi: E:/p2_segmentation/Experiments/fading_20_1_5/snapshot_epoch{}.ckpt
+weights_test_finetune: E:/p2_segmentation/Experiments/from_60_to_80/trained_model.ckpt
+
+finetune: False
+
+train: True
+test: False
+predict: False
+thumbnail: True
+
+test_set: False
+val_set: True
+
+loss: 'dice_loss'
+second_stage: False
+box_prediction: False
+box_path: 'D:/project_2/data_dwi_project/boxes_first_stage/fold_4/all/' # 'F:/data_dwi_project/boxes_first_stage/fold_1/all/'
+
+t1gd: True
+t2w: True
+t1w: True
+dwi: False
+
+
+batch_size: 1
+epochs: 200
+optimizer: adam     
+learning_rate: 0.001
+snapshots: 1         
+gpu: 0
+n_channels: 4
+
+da: False
+da_flip: True
+da_deform: True
+da_rot: 10
+
+lr_scheduler: False
+
+resize: True
+norm: True
+
+box: False
+
+sizeX: 112
+sizeY: 112
+sizeZ: 112
+
+normalize: True
+shuffle_data: False
+
+seed: 1924    

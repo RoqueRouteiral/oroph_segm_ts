@@ -1,6 +1,8 @@
 # Strategies for tackling the class imbalance problem of oropharyngeal primary tumor segmentation on Magnetic Resonance Images
 The purpose of this work is to investigate different strategies to tackle the class imbalance problem in the oropharyngeal tumor subsite.
 
+Published artcle: https://www.sciencedirect.com/science/article/pii/S2405631622000744
+
 # Walkthrough of the code
 
 The configuration file can be found in config.py. It can be used to change the hyperparameters for training or inference.
